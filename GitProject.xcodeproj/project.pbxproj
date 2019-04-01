@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A57F5E20CF381EA28F8E74D /* Pods_GitProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 576B989E20AED7210EC03B15 /* Pods_GitProject.framework */; };
 		77DFCEE4225125B800EEC638 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DFCEE3225125B800EEC638 /* AppDelegate.swift */; };
 		77DFCEE6225125B800EEC638 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DFCEE5225125B800EEC638 /* ViewController.swift */; };
 		77DFCEE9225125B800EEC638 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77DFCEE7225125B800EEC638 /* Main.storyboard */; };
 		77DFCEEB225125B900EEC638 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77DFCEEA225125B900EEC638 /* Assets.xcassets */; };
 		77DFCEEE225125B900EEC638 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77DFCEEC225125B900EEC638 /* LaunchScreen.storyboard */; };
+		77DFCEF92251ED0A00EEC638 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77DFCEF82251ED0A00EEC638 /* SWRevealViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		576B989E20AED7210EC03B15 /* Pods_GitProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		77DFCEE0225125B800EEC638 /* GitProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77DFCEE3225125B800EEC638 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77DFCEE5225125B800EEC638 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,11 @@
 		77DFCEEA225125B900EEC638 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77DFCEED225125B900EEC638 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		77DFCEEF225125B900EEC638 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77DFCEF62251ED0900EEC638 /* GitProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GitProject-Bridging-Header.h"; sourceTree = "<group>"; };
+		77DFCEF72251ED0A00EEC638 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		77DFCEF82251ED0A00EEC638 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		96C359699900B1FB452036A5 /* Pods-GitProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-GitProject/Pods-GitProject.release.xcconfig"; sourceTree = "<group>"; };
+		FAEB5684986EF4332892402D /* Pods-GitProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GitProject/Pods-GitProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A57F5E20CF381EA28F8E74D /* Pods_GitProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37A8638C543F0ADA532A0ED2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FAEB5684986EF4332892402D /* Pods-GitProject.debug.xcconfig */,
+				96C359699900B1FB452036A5 /* Pods-GitProject.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		77DFCED7225125B800EEC638 = {
 			isa = PBXGroup;
 			children = (
+				77DFCEF52251ECBD00EEC638 /* Supporting Files */,
 				77DFCEE2225125B800EEC638 /* GitProject */,
 				77DFCEE1225125B800EEC638 /* Products */,
+				37A8638C543F0ADA532A0ED2 /* Pods */,
+				CB9F6EFFB90E9F4DB0F4561E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +85,24 @@
 			path = GitProject;
 			sourceTree = "<group>";
 		};
+		77DFCEF52251ECBD00EEC638 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				77DFCEF72251ED0A00EEC638 /* SWRevealViewController.h */,
+				77DFCEF62251ED0900EEC638 /* GitProject-Bridging-Header.h */,
+				77DFCEF82251ED0A00EEC638 /* SWRevealViewController.m */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CB9F6EFFB90E9F4DB0F4561E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				576B989E20AED7210EC03B15 /* Pods_GitProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 77DFCEF2225125B900EEC638 /* Build configuration list for PBXNativeTarget "GitProject" */;
 			buildPhases = (
+				6840C4FD21C31212F86D395C /* [CP] Check Pods Manifest.lock */,
 				77DFCEDC225125B800EEC638 /* Sources */,
 				77DFCEDD225125B800EEC638 /* Frameworks */,
 				77DFCEDE225125B800EEC638 /* Resources */,
+				5EE054132B7EC85BC6C7F3AE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -96,6 +137,7 @@
 				TargetAttributes = {
 					77DFCEDF225125B800EEC638 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -130,6 +172,51 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5EE054132B7EC85BC6C7F3AE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GitProject/Pods-GitProject-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GitProject/Pods-GitProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6840C4FD21C31212F86D395C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GitProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		77DFCEDC225125B800EEC638 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -137,6 +224,7 @@
 			files = (
 				77DFCEE6225125B800EEC638 /* ViewController.swift in Sources */,
 				77DFCEE4225125B800EEC638 /* AppDelegate.swift in Sources */,
+				77DFCEF92251ED0A00EEC638 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,8 +368,10 @@
 		};
 		77DFCEF3225125B900EEC638 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAEB5684986EF4332892402D /* Pods-GitProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4Q488F65VP;
 				INFOPLIST_FILE = GitProject/Info.plist;
@@ -291,6 +381,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.GitProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GitProject-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -298,8 +390,10 @@
 		};
 		77DFCEF4225125B900EEC638 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96C359699900B1FB452036A5 /* Pods-GitProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4Q488F65VP;
 				INFOPLIST_FILE = GitProject/Info.plist;
@@ -309,6 +403,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.GitProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GitProject-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
