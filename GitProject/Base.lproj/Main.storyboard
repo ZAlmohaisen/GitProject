@@ -21,13 +21,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <segue destination="1RX-y0-g0f" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="ZPd-UK-YzN"/>
-                        <segue destination="b0e-j9-foT" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="uNo-vB-UGl"/>
+                        <segue destination="1RX-y0-g0f" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="ZPd-UK-YzN"/>
+                        <segue destination="b0e-j9-foT" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="uNo-vB-UGl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-31" y="56"/>
+            <point key="canvasLocation" x="-31.199999999999999" y="55.322338830584712"/>
         </scene>
         <!--ChatVC-->
         <scene sceneID="JTK-hy-rNP">
@@ -79,7 +79,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xf2-yh-i8i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="776.79999999999995" y="-320.68965517241384"/>
+            <point key="canvasLocation" x="774" y="470"/>
         </scene>
         <!--ChannelVC-->
         <scene sceneID="uem-JA-aG5">
@@ -94,7 +94,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5hK-Te-k1f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="776.79999999999995" y="371.96401799100454"/>
+            <point key="canvasLocation" x="774" y="-234"/>
         </scene>
     </scenes>
     <resources>
