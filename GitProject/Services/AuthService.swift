@@ -44,7 +44,7 @@ class AuthService {
         }
     }
     
-}
+
 
 func registerUser(email: String, password:String, completion: @escaping completionHandler) {
     
@@ -70,4 +70,6 @@ func registerUser(email: String, password:String, completion: @escaping completi
         }
     }
     
+}
+
 }

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1A57F5E20CF381EA28F8E74D /* Pods_GitProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 576B989E20AED7210EC03B15 /* Pods_GitProject.framework */; };
 		770C3F0822564AE100A5E25A /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770C3F0722564AE100A5E25A /* AuthService.swift */; };
+		770C3F0A22565B0D00A5E25A /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770C3F0922565B0D00A5E25A /* RoundedButton.swift */; };
 		77DFCEE4225125B800EEC638 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DFCEE3225125B800EEC638 /* AppDelegate.swift */; };
 		77DFCEE9225125B800EEC638 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77DFCEE7225125B800EEC638 /* Main.storyboard */; };
 		77DFCEEB225125B900EEC638 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77DFCEEA225125B900EEC638 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		576B989E20AED7210EC03B15 /* Pods_GitProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		770C3F0722564AE100A5E25A /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		770C3F0922565B0D00A5E25A /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		77DFCEE0225125B800EEC638 /* GitProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77DFCEE3225125B800EEC638 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77DFCEE8225125B800EEC638 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				77DFCF182253392300EEC638 /* GradientView.swift */,
+				770C3F0922565B0D00A5E25A /* RoundedButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				77DFCF00225255E800EEC638 /* ChannelVC.swift in Sources */,
+				770C3F0A22565B0D00A5E25A /* RoundedButton.swift in Sources */,
 				77DFCEFE225255C800EEC638 /* ChatVC.swift in Sources */,
 				77DFCF202253E3CB00EEC638 /* CreateAccountVC.swift in Sources */,
 				770C3F0822564AE100A5E25A /* AuthService.swift in Sources */,
