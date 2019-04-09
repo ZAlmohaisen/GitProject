@@ -228,6 +228,9 @@
                                         <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginBtnPressed:" destination="pWC-z1-NLj" eventType="touchUpInside" id="8cq-3V-9oE"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="9tE-nQ-cyw">
                                 <rect key="frame" x="62.5" y="160" width="250" height="86"/>
@@ -282,6 +285,10 @@
                                     <action selector="createAccountBtnPressed:" destination="pWC-z1-NLj" eventType="touchUpInside" id="8J7-hP-MoE"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="r7k-aS-KnC">
+                                <rect key="frame" x="169" y="215" width="37" height="37"/>
+                                <color key="color" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -291,14 +298,19 @@
                             <constraint firstItem="EKv-t9-OtP" firstAttribute="top" secondItem="9s7-bP-Zot" secondAttribute="top" constant="60" id="DZB-IU-i75"/>
                             <constraint firstItem="9tE-nQ-cyw" firstAttribute="centerX" secondItem="AZ7-pd-z3q" secondAttribute="centerX" id="IKp-5k-UyM"/>
                             <constraint firstItem="sLy-FB-JNQ" firstAttribute="top" secondItem="qck-TA-2bd" secondAttribute="bottom" id="JL7-z6-gNO"/>
+                            <constraint firstItem="r7k-aS-KnC" firstAttribute="centerX" secondItem="AZ7-pd-z3q" secondAttribute="centerX" id="ODs-qC-Liq"/>
                             <constraint firstItem="9s7-bP-Zot" firstAttribute="trailing" secondItem="Ewf-Xq-yeV" secondAttribute="trailing" constant="20" id="S4q-20-9cg"/>
                             <constraint firstItem="EKv-t9-OtP" firstAttribute="centerX" secondItem="AZ7-pd-z3q" secondAttribute="centerX" id="V9K-7b-WVM"/>
                             <constraint firstItem="9tE-nQ-cyw" firstAttribute="top" secondItem="EKv-t9-OtP" secondAttribute="bottom" constant="40" id="Wyq-ji-5Vb"/>
                             <constraint firstItem="sLy-FB-JNQ" firstAttribute="centerX" secondItem="AZ7-pd-z3q" secondAttribute="centerX" id="XSL-yh-h20"/>
+                            <constraint firstItem="r7k-aS-KnC" firstAttribute="centerY" secondItem="AZ7-pd-z3q" secondAttribute="centerY" constant="-100" id="fm7-gn-U9p"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9s7-bP-Zot"/>
                     </view>
                     <connections>
+                        <outlet property="passwordTxt" destination="jlY-NF-KqG" id="G5V-ZE-T2R"/>
+                        <outlet property="spinner" destination="r7k-aS-KnC" id="YrR-Vn-0x5"/>
+                        <outlet property="userNameTxt" destination="3SN-GJ-zVw" id="3ja-A5-xrd"/>
                         <segue destination="wVA-DG-yBC" kind="show" identifier="toCreateAccount" id="HUx-Ji-fQ8"/>
                     </connections>
                 </viewController>
