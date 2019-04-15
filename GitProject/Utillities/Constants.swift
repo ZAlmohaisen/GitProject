@@ -16,13 +16,13 @@ let URL_REGISTER = "\(BASE_URL)account/register"
 let URL_LOGIN = "\(BASE_URL)account/login"
 let URL_USER_ADD = "\(BASE_URL)user/add"
 let URL_USER_BYEMAIL = "\(BASE_URL)user/byEmail/"
-let URL_GET_CHANNELS = "\(BASE_URL)cahnnel/"
-let URL_GET_MESSAGES = "\(BASE_URL)message/byCahnnel"
+let URL_GET_CHANNELS = "\(BASE_URL)channel/"
+let URL_GET_MESSAGES = "\(BASE_URL)message/byChannel/"
 
 
 //Sockets
-let SOCKET_EVENT_NEW_CHANNEL = "newChannel"
-let SOCKET_EVENT_CHANNEL_CREATED = "channelCreated"
+//let SOCKET_EVENT_NEW_CHANNEL = "newChannel"
+//let SOCKET_EVENT_CHANNEL_CREATED = "channelCreated"
 
 //Colors
 let smackPurplePlaceholder = #colorLiteral(red: 0.3254901961, green: 0.4196078431, blue: 0.7764705882, alpha: 0.5)

@@ -63,11 +63,11 @@ class MessageService {
                         let channelId = item["channelId"].stringValue
                         let id = item["_id"].stringValue
                         let userName = item["userName"].stringValue
-                        let userAvatar = item["UserAvatar"].stringValue
-                        let userAvatarColor = item["UserAvatarColor"].stringValue
-                        let timeStapm = item["timeStamp"].stringValue
+                        let userAvatar = item["userAvatar"].stringValue
+                        let userAvatarColor = item["userAvatarColor"].stringValue
+                        let timeStamp = item["timeStamp"].stringValue
                         
-                        let message = Message(message: messageBody, userName: userName, channelId: channelId, userAvatar: userAvatar, userAvatarColor: userAvatarColor, id: id, timeStamp: timeStapm)
+                        let message = Message(message: messageBody, userName: userName, channelId: channelId, userAvatar: userAvatar, userAvatarColor: userAvatarColor, id: id, timeStamp: timeStamp)
                         self.messages.append(message)
                         
                     }
