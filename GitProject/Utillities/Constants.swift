@@ -10,6 +10,8 @@ import Foundation
 
 typealias completionHandler = (_ Success: Bool) -> ()
 
+
+
 // URL Constant
 let BASE_URL = "https://hidden-bastion-48828.herokuapp.com/v1/"
 let URL_REGISTER = "\(BASE_URL)account/register"
